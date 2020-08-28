@@ -33,7 +33,6 @@ group :development, :test do
   gem 'fasterer', '~> 0.8.3'
   gem 'fuubar', '~> 2.5'
   gem 'pry-rails', '~> 0.3.9'
-  gem 'rspec_junit_formatter', '~> 0.4.1'
   gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
   gem 'rubocop-rails', '~> 2.7', '>= 2.7.1'
   gem 'shoulda-matchers', '~> 4.3'
