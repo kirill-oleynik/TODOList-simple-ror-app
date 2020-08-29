@@ -1,0 +1,47 @@
+version: 2.1
+orbs:
+  ruby: circleci/ruby@1.0
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.7.1
+        environment:
+          RAILS_ENV: test
+    steps:
+      - checkout
+      - ruby/install-deps
+
+  test:
+    docker:
+      - image: circleci/ruby:2.7.1
+      - image: postgres:9.5
+        environment:
+          POSTGRES_USER: TODOList-app
+          POSTGRES_DB: TODOList-app_test
+          POSTGRES_PASSWORD: "password"
+    environment:
+       PGHOST: localhost
+       PGUSER: TODOList-app
+       RAILS_ENV: test
+    steps:
+      - checkout
+      - ruby/install-deps
+      - run:
+          name: Wait for DB
+          command: dockerize -wait tcp://localhost:5432 -timeout 1m
+      - run:
+          name: Database setup
+          command: bundle exec rails db:schema:load --trace
+      - ruby/rspec-test
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+
+
+
