@@ -41,6 +41,7 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 4.3'
 end
 group :test do
+  gem 'rspec_junit_formatter', '~> 0.4.1'
   gem 'json_matchers', '~> 0.11.1'
 end
 

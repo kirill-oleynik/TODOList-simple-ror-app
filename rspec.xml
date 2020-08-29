@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="3" skipped="0" failures="0" errors="0" time="0.361469" timestamp="2020-08-29T14:50:59+03:00" hostname="MacBook-Pro.local">
+<properties>
+<property name="seed" value="24941"/>
+</properties>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.194362"></testcase>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations " file="./spec/models/admin_user_spec.rb" time="0.007831"></testcase>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.019464"></testcase>
+</testsuite>
