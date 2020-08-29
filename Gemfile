@@ -12,6 +12,9 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'active_model_serializers', '~> 0.10.10'
 gem 'puma', '~> 3.11'
+# ActiveAdmin
+gem 'activeadmin'
+gem 'devise'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
