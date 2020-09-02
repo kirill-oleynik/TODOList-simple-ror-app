@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="3" skipped="0" failures="0" errors="0" time="0.361469" timestamp="2020-08-29T14:50:59+03:00" hostname="MacBook-Pro.local">
+<testsuite name="rspec" tests="10" skipped="0" failures="0" errors="0" time="0.620002" timestamp="2020-09-02T16:13:45+03:00" hostname="MacBook-Pro.local">
 <properties>
-<property name="seed" value="24941"/>
+<property name="seed" value="53305"/>
 </properties>
-<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.194362"></testcase>
-<testcase classname="spec.models.admin_user_spec" name="AdminUser validations " file="./spec/models/admin_user_spec.rb" time="0.007831"></testcase>
-<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.019464"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.139611"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations " file="./spec/models/user_spec.rb" time="0.013610"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :last_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.032366"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to have a secure password" file="./spec/models/user_spec.rb" time="0.017306"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :first_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.046004"></testcase>
+<testcase classname="spec.models.task_spec" name="Task validations is expected to validate that :title cannot be empty/falsy" file="./spec/models/task_spec.rb" time="0.061431"></testcase>
+<testcase classname="spec.models.task_spec" name="Task validations " file="./spec/models/task_spec.rb" time="0.009441"></testcase>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.072572"></testcase>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations " file="./spec/models/admin_user_spec.rb" time="0.012135"></testcase>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.043422"></testcase>
 </testsuite>

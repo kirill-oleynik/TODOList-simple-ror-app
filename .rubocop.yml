@@ -8,6 +8,7 @@ AllCops:
     - 'app/channels/**/*'
     - 'config.ru'
     - 'app/models/application_record.rb'
+    - 'app/admin/**/*'
 Style/RedundantReturn:
   Enabled: false
 Style/Documentation:
