@@ -8,10 +8,15 @@ AllCops:
     - 'app/channels/**/*'
     - 'config.ru'
     - 'app/models/application_record.rb'
+    - 'app/admin/**/*'
 Style/RedundantReturn:
   Enabled: false
 Style/Documentation:
   Enabled: true
   Exclude:
     - 'app/serializers/*'
-    - 'app/controllers/*'
+    - 'app/controllers/**/*'
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - 'spec/**/*'

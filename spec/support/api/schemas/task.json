@@ -1,0 +1,10 @@
+{
+  "id": "file:/task.json#",
+  "type": "object",
+  "required": ["id", "title", "done"],
+  "properties": {
+    "id": { "type": "integer" },
+    "titile": { "type": "string" },
+    "done": {"type": "boolean"}
+  }
+}

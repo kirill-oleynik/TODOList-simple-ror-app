@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="3" skipped="0" failures="0" errors="0" time="0.361469" timestamp="2020-08-29T14:50:59+03:00" hostname="MacBook-Pro.local">
+<testsuite name="rspec" tests="19" skipped="0" failures="0" errors="0" time="0.830873" timestamp="2020-09-04T13:13:44+03:00" hostname="MacBook-Pro.local">
 <properties>
-<property name="seed" value="24941"/>
+<property name="seed" value="38370"/>
 </properties>
-<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.194362"></testcase>
-<testcase classname="spec.models.admin_user_spec" name="AdminUser validations " file="./spec/models/admin_user_spec.rb" time="0.007831"></testcase>
-<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.019464"></testcase>
+<testcase classname="spec.requests.delete_task_request_spec" name="Tasks DESTROY /tasks when entity exists deletes entity and returns 204 status code" file="./spec/requests/delete_task_request_spec.rb" time="0.173354"></testcase>
+<testcase classname="spec.requests.delete_task_request_spec" name="Tasks DESTROY /tasks when entity does not exist returns 404 status code" file="./spec/requests/delete_task_request_spec.rb" time="0.020012"></testcase>
+<testcase classname="spec.requests.create_task_request_spec" name="Tasks POST /tasks with invalid params returns 422 status code" file="./spec/requests/create_task_request_spec.rb" time="0.035368"></testcase>
+<testcase classname="spec.requests.create_task_request_spec" name="Tasks POST /tasks with invalid params " file="./spec/requests/create_task_request_spec.rb" time="0.034322"></testcase>
+<testcase classname="spec.requests.create_task_request_spec" name="Tasks POST /tasks whith valid params returns expected response" file="./spec/requests/create_task_request_spec.rb" time="0.035068"></testcase>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.060588"></testcase>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations " file="./spec/models/admin_user_spec.rb" time="0.008104"></testcase>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.028803"></testcase>
+<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with invalid params returns 422 status code" file="./spec/requests/update_task_request_spec.rb" time="0.025537"></testcase>
+<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with invalid params includes errors description" file="./spec/requests/update_task_request_spec.rb" time="0.024179"></testcase>
+<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with invalid params when entity does not exist returns 404 status code" file="./spec/requests/update_task_request_spec.rb" time="0.039707"></testcase>
+<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with valid params updates entity &amp; returns expected response" file="./spec/requests/update_task_request_spec.rb" time="0.033273"></testcase>
+<testcase classname="spec.models.task_spec" name="Task validations " file="./spec/models/task_spec.rb" time="0.013591"></testcase>
+<testcase classname="spec.models.task_spec" name="Task validations is expected to validate that :title cannot be empty/falsy" file="./spec/models/task_spec.rb" time="0.021920"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :first_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.055847"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations " file="./spec/models/user_spec.rb" time="0.008827"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :last_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.042881"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.021595"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to have a secure password" file="./spec/models/user_spec.rb" time="0.019668"></testcase>
 </testsuite>
