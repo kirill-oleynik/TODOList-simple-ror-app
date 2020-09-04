@@ -15,4 +15,8 @@ Style/Documentation:
   Enabled: true
   Exclude:
     - 'app/serializers/*'
-    - 'app/controllers/*'
+    - 'app/controllers/**/*'
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - 'spec/**/*'
