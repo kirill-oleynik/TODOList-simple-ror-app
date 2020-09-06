@@ -127,6 +127,7 @@ GEM
     jsonlint (0.3.0)
       oj (~> 3)
       optimist (~> 3)
+    jwt (2.2.2)
     kaminari (1.2.1)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.2.1)
@@ -297,6 +298,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.10)
   activeadmin
   awesome_print (~> 1.8)
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   bullet (~> 6.1)
   byebug
@@ -308,6 +310,7 @@ DEPENDENCIES
   fuubar (~> 2.5)
   json_matchers (~> 0.11.1)
   jsonlint (~> 0.3.0)
+  jwt
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   pry-rails (~> 0.3.9)
