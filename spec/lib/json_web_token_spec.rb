@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../lib/json_web_token.rb'
+require_relative '../../lib/json_web_token.rb'
 
 RSpec.describe JsonWebToken do
   let!(:payload_1) { attributes_for(:user).slice(:email, :password_digest) }

@@ -17,6 +17,7 @@ gem 'activeadmin'
 gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'jwt'
+gem 'simple_command', '~> 0.1.0'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
