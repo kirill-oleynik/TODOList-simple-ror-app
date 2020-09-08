@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="25" skipped="0" failures="0" errors="0" time="6.339272" timestamp="2020-09-07T19:02:07+03:00" hostname="MacBook-Pro.local">
+<testsuite name="rspec" tests="27" skipped="0" failures="0" errors="0" time="5.671669" timestamp="2020-09-08T15:38:31+03:00" hostname="MacBook-Pro.local">
 <properties>
-<property name="seed" value="20821"/>
+<property name="seed" value="3369"/>
 </properties>
-<testcase classname="spec.lib.json_web_token_spec" name="JsonWebToken#decode returns payload that ewas encoded" file="./spec/lib/json_web_token_spec.rb" time="0.134354"></testcase>
-<testcase classname="spec.lib.json_web_token_spec" name="JsonWebToken#encode whith same payload and expiration provided  generates same token" file="./spec/lib/json_web_token_spec.rb" time="0.009969"></testcase>
-<testcase classname="spec.lib.json_web_token_spec" name="JsonWebToken#encode with differen payloads and same expiration provided generate different tokens" file="./spec/lib/json_web_token_spec.rb" time="0.015334"></testcase>
-<testcase classname="spec.lib.json_web_token_spec" name="JsonWebToken#encode with same payload and default expiration generate different tokens" file="./spec/lib/json_web_token_spec.rb" time="5.013529"></testcase>
-<testcase classname="spec.requests.delete_task_request_spec" name="Tasks DESTROY /tasks when entity exists deletes entity and returns 204 status code" file="./spec/requests/delete_task_request_spec.rb" time="0.110466"></testcase>
-<testcase classname="spec.requests.delete_task_request_spec" name="Tasks DESTROY /tasks when entity does not exist returns 404 status code" file="./spec/requests/delete_task_request_spec.rb" time="0.017907"></testcase>
-<testcase classname="spec.models.admin_user_spec" name="AdminUser validations " file="./spec/models/admin_user_spec.rb" time="0.048330"></testcase>
-<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.043947"></testcase>
-<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.033844"></testcase>
-<testcase classname="spec.commands.authenticate_user_spec" name="AuthenticateUser called with valid credentials #result returns generated auth token without any errors" file="./spec/commands/authenticate_user_spec.rb" time="0.077955"></testcase>
-<testcase classname="spec.commands.authenticate_user_spec" name="AuthenticateUser called with incalid credentials #call returns nil as result &amp; specifies errors" file="./spec/commands/authenticate_user_spec.rb" time="0.029293"></testcase>
-<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with invalid params includes errors description" file="./spec/requests/update_task_request_spec.rb" time="0.122584"></testcase>
-<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with invalid params returns 422 status code" file="./spec/requests/update_task_request_spec.rb" time="0.052390"></testcase>
-<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with invalid params when entity does not exist returns 404 status code" file="./spec/requests/update_task_request_spec.rb" time="0.051259"></testcase>
-<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with valid params updates entity &amp; returns expected response" file="./spec/requests/update_task_request_spec.rb" time="0.050807"></testcase>
-<testcase classname="spec.models.task_spec" name="Task validations is expected to validate that :title cannot be empty/falsy" file="./spec/models/task_spec.rb" time="0.032251"></testcase>
-<testcase classname="spec.models.task_spec" name="Task validations " file="./spec/models/task_spec.rb" time="0.024767"></testcase>
-<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :last_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.045281"></testcase>
-<testcase classname="spec.models.user_spec" name="User validations is expected to have a secure password" file="./spec/models/user_spec.rb" time="0.062180"></testcase>
-<testcase classname="spec.models.user_spec" name="User validations " file="./spec/models/user_spec.rb" time="0.020227"></testcase>
-<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :first_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.039477"></testcase>
-<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.042070"></testcase>
-<testcase classname="spec.requests.create_task_request_spec" name="Tasks POST /tasks with invalid params returns 422 status code" file="./spec/requests/create_task_request_spec.rb" time="0.025215"></testcase>
-<testcase classname="spec.requests.create_task_request_spec" name="Tasks POST /tasks with invalid params " file="./spec/requests/create_task_request_spec.rb" time="0.021788"></testcase>
-<testcase classname="spec.requests.create_task_request_spec" name="Tasks POST /tasks whith valid params returns expected response" file="./spec/requests/create_task_request_spec.rb" time="0.031256"></testcase>
+<testcase classname="spec.commands.authorize_api_request_spec" name="AuthorizeApiRequest when user exists &amp; provided token is valid returns current user" file="./spec/commands/authorize_api_request_spec.rb" time="0.098379"></testcase>
+<testcase classname="spec.commands.authorize_api_request_spec" name="AuthorizeApiRequest when user does not exist returns nil and sets expected errors" file="./spec/commands/authorize_api_request_spec.rb" time="0.032912"></testcase>
+<testcase classname="spec.requests.delete_task_request_spec" name="Tasks DESTROY /tasks when entity does not exist returns 404 status code" file="./spec/requests/delete_task_request_spec.rb" time="0.032312"></testcase>
+<testcase classname="spec.requests.delete_task_request_spec" name="Tasks DESTROY /tasks when entity exists deletes entity and returns 204 status code" file="./spec/requests/delete_task_request_spec.rb" time="0.025082"></testcase>
+<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with invalid params returns 422 status code" file="./spec/requests/update_task_request_spec.rb" time="0.036334"></testcase>
+<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with invalid params includes errors description" file="./spec/requests/update_task_request_spec.rb" time="0.016843"></testcase>
+<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with invalid params when entity does not exist returns 404 status code" file="./spec/requests/update_task_request_spec.rb" time="0.019067"></testcase>
+<testcase classname="spec.requests.update_task_request_spec" name="Tasks PUT /tasks with valid params updates entity &amp; returns expected response" file="./spec/requests/update_task_request_spec.rb" time="0.029495"></testcase>
+<testcase classname="spec.commands.authenticate_user_spec" name="AuthenticateUser called with valid credentials #result returns generated auth token without any errors" file="./spec/commands/authenticate_user_spec.rb" time="0.019440"></testcase>
+<testcase classname="spec.commands.authenticate_user_spec" name="AuthenticateUser called with incalid credentials #call returns nil as result &amp; specifies errors" file="./spec/commands/authenticate_user_spec.rb" time="0.008536"></testcase>
+<testcase classname="spec.models.task_spec" name="Task validations is expected to validate that :title cannot be empty/falsy" file="./spec/models/task_spec.rb" time="0.012816"></testcase>
+<testcase classname="spec.models.task_spec" name="Task validations " file="./spec/models/task_spec.rb" time="0.005685"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations " file="./spec/models/user_spec.rb" time="0.007992"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.017574"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to have a secure password" file="./spec/models/user_spec.rb" time="0.013006"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :first_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.019657"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :last_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.017787"></testcase>
+<testcase classname="spec.requests.create_task_request_spec" name="Tasks POST /tasks with invalid params returns 422 status code" file="./spec/requests/create_task_request_spec.rb" time="0.014217"></testcase>
+<testcase classname="spec.requests.create_task_request_spec" name="Tasks POST /tasks with invalid params " file="./spec/requests/create_task_request_spec.rb" time="0.011825"></testcase>
+<testcase classname="spec.requests.create_task_request_spec" name="Tasks POST /tasks whith valid params returns expected response" file="./spec/requests/create_task_request_spec.rb" time="0.014463"></testcase>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.036574"></testcase>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/admin_user_spec.rb" time="0.016181"></testcase>
+<testcase classname="spec.models.admin_user_spec" name="AdminUser validations " file="./spec/models/admin_user_spec.rb" time="0.007306"></testcase>
+<testcase classname="spec.lib.json_web_token_spec" name="JsonWebToken#decode returns payload that ewas encoded" file="./spec/lib/json_web_token_spec.rb" time="0.008445"></testcase>
+<testcase classname="spec.lib.json_web_token_spec" name="JsonWebToken#encode with differen payloads and same expiration provided generate different tokens" file="./spec/lib/json_web_token_spec.rb" time="0.009317"></testcase>
+<testcase classname="spec.lib.json_web_token_spec" name="JsonWebToken#encode with same payload and default expiration generate different tokens" file="./spec/lib/json_web_token_spec.rb" time="5.011621"></testcase>
+<testcase classname="spec.lib.json_web_token_spec" name="JsonWebToken#encode whith same payload and expiration provided  generates same token" file="./spec/lib/json_web_token_spec.rb" time="0.012710"></testcase>
 </testsuite>
